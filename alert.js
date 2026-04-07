@@ -1,8 +1,11 @@
-"use strict";
+// Базвоые арифметические операторы
+const width = 10;
+const height = 5;
+const space = width * height;
+const volume = 2 ** 6; // 2 *2 * 2 (** степень)
+console.log(volume)
 
-let a = 1;
-console.log(a)
-a = 'test'; 
-console.log(a)
-
-
+// Строки
+const city = 'Москва';
+const street = 'Ленина';
+console.log(city + ', ' + street + ' ' + 5)
