@@ -1,6 +1,8 @@
 "use strict";
 
+let a = 1;
+console.log(a)
+a = 'test'; 
+console.log(a)
 
 
-const GREEN_PLANET = ('EARTH')
-alert(GREEN_PLANET);
