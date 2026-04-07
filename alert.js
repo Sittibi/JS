@@ -1,11 +1,18 @@
-// Базвоые арифметические операторы
-const width = 10;
-const height = 5;
-const space = width * height;
-const volume = 2 ** 6; // 2 *2 * 2 (** степень)
-console.log(volume)
+// Операторы присваивания
+let age = 18 + 5;
+age += 2;  // age = age + 2
+age -= 3;
+age *= 2;
 
-// Строки
-const city = 'Москва';
-const street = 'Ленина';
-console.log(city + ', ' + street + ' ' + 5)
+
+age++;    // age + 1
+age--;   
+console.log(age)
+
+// Операторы сравнения
+const vasya = 20;
+console.log(age > vasya);
+console.log(age >= vasya);
+console.log(age < vasya);
+console.log(age <= vasya);
+console.log(age == vasya);
