@@ -1,15 +1,9 @@
-let a = 5;
-let b = 5.6;
-console.log(typeof a)
-console.log(typeof b)
-a = 'stroke';
-console.log(typeof a);
-let isAdmin = a > 10;
-console.log(typeof isAdmin)
+const stavka = 80;
+const hoursRdy = 5;
+const days = 5;
+const hoursWork = 40;
+const needToGO = 11;
+let timeWaste;
+let daysHave;
 
 
-let c;
-console.log(typeof c)
-
-let d = null;
-console.log(d == null);
