@@ -1,11 +1,15 @@
-const projectname = 'cайт магазина';
-const price = 2000;
-const author = 'Василий Непупкин';
+const age = '18';
+// со знаком + не преобразут строку в число. Number селектор преобразования.
+console.log(Number(age) + 5);
+// c другими значниями - * / автоматически переводит строку в число
+console.log(age - 3);
+// String селектор преобразования в строку.
+console.log(String(4) + 3);
 
-const template = author + ' заказал' + ' ' + projectname + " по цене" + ' ' + price + ' рублей.';
-console.log(template)
+// Boolean имеет числовое значение false = 0 true = 1
+console.log(Boolean('') + 3);
+console.log(true + 3);
 
-const template2 = `${author} заказл ${projectname} по цене ${price} рублей.`;
-console.log(template2)
+
 
 
