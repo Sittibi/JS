@@ -1,11 +1,15 @@
-const isSuited = 100 + 10 > 90 - 5;
-console.log(isSuited);
-const a = (6 + 12) / 2;
-console.log(a)
+let a = 5;
+let b = 5.6;
+console.log(typeof a)
+console.log(typeof b)
+a = 'stroke';
+console.log(typeof a);
+let isAdmin = a > 10;
+console.log(typeof isAdmin)
 
-let b;
+
 let c;
-c = b = 100+50;
-console.log(c);
-console.log(b);
-// Таблица приритетов https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Operator_precedence#table
+console.log(typeof c)
+
+let d = null;
+console.log(d == null);
