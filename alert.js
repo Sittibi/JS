@@ -1,12 +1,19 @@
-const money = 12000;
-const yeahrProcent = 0.07;
-const moneyPerMonth = (money * yeahrProcent) / 12;
-const fullPayment = money + moneyPerMonth * 24;
-const houseCost = 13500;
+const secretNumber = '7';
 
-if (fullPayment > houseCost) {
-    console.log(`Мы накопили: ${fullPayment}$. Ура, я куплю дом. Остаток ${fullPayment - houseCost}$.`);
-} else {
-  console.log(`Столько копил, а денег не хватило на дом. Ушла в минус на ${fullPayment - houseCost}$ =(`);
+ // == это нестрогое равенство, проверяет только значение
+if(secretNumber == 7) { 
+  console.log('угадал не строго')
 }
+// строгая равенство, проверяет и тип
+if(secretNumber === 7) {  
+  console.log('угадал строго')
+}
+
+
+const q = Number(prompt('Введите число'));
+if (q === 7) {
+  console.log('Угадал строго')
+}
+
+
 
