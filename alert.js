@@ -1,51 +1,35 @@
-const role = "manager";
+const bmwX3Price = 100000;
+const fordFocusPrice = 10000;
+const budget = 22000;
 
-// if( role === 'manager') {
-//   console.log ('Менеджер')
-// }
-// else if (roloe === 'admin') {
-//   console.log('Админ')
-// }
-// else if(role === 'seo') {
-//   console.log ('СЕО')
-// }
-
-switch (role) {
-  case "manager": // role === 'manager
-    console.log("Менеджер");
-    break; // останавливает функцию при нахождение значения
-  case "admin": // role === 'manager
-    console.log("Админ");
-    break;
-  case "seo":
-    console.log("CEO");
-    break;
-  default:
-    console.log("мы тебя не знаем");
-}
-switch (role) {
-  case "manager":
-  case "admin":
-    console.log("Не руководитель");
-    break;
-  case "seo":
-    console.log("Руководитель");
-    break;
-  default:
-    console.log("мы тебя не знаем");
+let message;
+if (budget > bmwX3Price) {
+  message = "BMW";
+} else if (budget > fordFocusPrice) {
+  message = "FORD";
+} else {
+  message = "Купи велосипед";
 }
 
-const num = 1;
+console.log(`Я хочу купить ${message}`);
 
-switch(true) {
+10 > 4 ? console.log("Больше нуля") : console.log("Не больше нуля");
 
-  case num > 0:     // true === num > 0
-  console.log('Положительный');
-  break;
-  case num < 0:
-  console.log('Отрицательный');
-  break;
-  case num = 0:
-  console.log('Ноль');
-  break;
+if (10 > 11) {
+  console.log("Больше нуля");
+} else {
+  console.log("Не больше нуля");
 }
+
+let str = 10 > 4 ? "Больше нуля" : "Не больше нуля";
+console.log(str);
+
+console.log(`${budget > bmwX3Price ? "Куплю BMW" : "Куплю велосипед"}`);
+
+let canBuy =
+  budget > bmwX3Price
+    ? "Куплю BMW"
+    : budget > fordFocusPrice
+      ? "Куплю Ford"
+      : "Куплю велосипед";
+console.log(canBuy);
