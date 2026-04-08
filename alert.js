@@ -1,19 +1,51 @@
-const secretNumber = '7';
+const role = "manager";
 
- // == это нестрогое равенство, проверяет только значение
-if(secretNumber == 7) { 
-  console.log('угадал не строго')
+// if( role === 'manager') {
+//   console.log ('Менеджер')
+// }
+// else if (roloe === 'admin') {
+//   console.log('Админ')
+// }
+// else if(role === 'seo') {
+//   console.log ('СЕО')
+// }
+
+switch (role) {
+  case "manager": // role === 'manager
+    console.log("Менеджер");
+    break; // останавливает функцию при нахождение значения
+  case "admin": // role === 'manager
+    console.log("Админ");
+    break;
+  case "seo":
+    console.log("CEO");
+    break;
+  default:
+    console.log("мы тебя не знаем");
 }
-// строгая равенство, проверяет и тип
-if(secretNumber === 7) {  
-  console.log('угадал строго')
+switch (role) {
+  case "manager":
+  case "admin":
+    console.log("Не руководитель");
+    break;
+  case "seo":
+    console.log("Руководитель");
+    break;
+  default:
+    console.log("мы тебя не знаем");
 }
 
+const num = 1;
 
-const q = Number(prompt('Введите число'));
-if (q === 7) {
-  console.log('Угадал строго')
+switch(true) {
+
+  case num > 0:     // true === num > 0
+  console.log('Положительный');
+  break;
+  case num < 0:
+  console.log('Отрицательный');
+  break;
+  case num = 0:
+  console.log('Ноль');
+  break;
 }
-
-
-
